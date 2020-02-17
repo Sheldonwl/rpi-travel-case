@@ -1,7 +1,7 @@
 # Setup Client
 We will be network booting the clients, but need to upgrade the Raspberry Pi's SPI EEPROM Bootloader before we can do that. At the time of creation	this feature is still in BETA, so we need to flash the BETA firmware to the client Pi. 
 
-## Prerequisites 
+## Pre-requisites 
 - SD card flashed with Raspbian full or lite
 - Internet access 
 
@@ -28,7 +28,7 @@ The steps listed above can be done by starting from scratch for every client, bu
 
 # Setup Server
 
-## Prerequisites 
+## Pre-requisites 
 - SD card flashed with Raspbian full or lite (Do not insert into Pi after flashing)
 
 ## Configure Waveshare TFT-LCD Touchscreen
