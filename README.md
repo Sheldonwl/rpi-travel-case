@@ -3,7 +3,7 @@
 
 This repository contains all info needed to recreate my 6 node Raspberry Pi Kubernetes cluster travel case. Well, that's quite a mouthful.
 
-![Alt text](/docs/images/3.jpg?raw=true "Raspberry Pi Travel Case Cluster")
+![Alt text](/docs/images/1.jpg?raw=true "Raspberry Pi Travel Case Cluster")
 
 ## Shopping list
 The product links are the ones I used for here in the Netherlands. Some websites might be in Dutch, but you can still use the picture as a reference. 
