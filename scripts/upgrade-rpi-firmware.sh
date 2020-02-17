@@ -23,7 +23,7 @@ rpi-eeprom-config --out pieeprom-2020-01-17-netboot.bin --config bootconf.txt pi
 # Update the firmware with the altered .bin file. 
 sudo rpi-eeprom-update -d -f ./pieeprom-2020-01-17-netboot.bin
 
-# Check the Pi's serial and write down the last 8 numbers/letters. You will need this to setup TFTP. 
+# Check the Pi's serial and write down the last 8 characters. You will need this to setup TFTP. 
 cat /proc/cpuinfo
 
 echo "Now reboot the Pi once and AFTER the reboot, shutdown and remove the SD card. If you shutdown the Pi right after upgrading the firmware and remove the SD card, the changes won't take affect."
