@@ -9,8 +9,11 @@ This repository contains all info needed to recreate my 6 node Raspberry Pi Kube
 ### Shopping list
 Go to: [Shopping list](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/shopping-list.md)  
 
-### Setup PXE Client & Server 
-Go to: [Setup PXE Server](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-client-and-server.md)  
+### Setup PXE Client
+Go to: [Setup Client](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-client.md)  
+
+### Setup PXE Server 
+Go to: [Setup Server](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-server.md)  
 
 
  
