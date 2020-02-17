@@ -268,9 +268,9 @@ sudo dd if=~/SDCardBackup.dmg of=/dev/disk1
 sudo diskutil eject /dev/rdisk3
 ```
 # Helpful links
-http://www.raspibo.org/wiki/index.php?title=Raspberry_PI:_network_boot_explained
-https://hackaday.com/2019/11/11/network-booting-the-pi-4/
-https://linuxhit.com/raspberry-pi-pxe-boot-netbooting-a-pi-4-without-an-sd-card/
+http://www.raspibo.org/wiki/index.php?title=Raspberry_PI:_network_boot_explained  
+https://hackaday.com/2019/11/11/network-booting-the-pi-4/  
+https://linuxhit.com/raspberry-pi-pxe-boot-netbooting-a-pi-4-without-an-sd-card/  
 https://thepihut.com/blogs/raspberry-pi-tutorials/17789160-backing-up-and-restoring-your-raspberry-pis-sd-card
 
 
