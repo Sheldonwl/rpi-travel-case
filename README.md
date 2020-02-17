@@ -22,7 +22,7 @@ https://www.allekabels.nl/usb-30-kabel/4545/2269207/usb-30-c-verloopstekker.html
 - 1x - D-Link GO-SW-8G 8 port 1 Gbit/s Switch  
 https://www.conrad.nl/p/d-link-go-sw-8g-netwerk-switch-8-poorten-1-gbits-989987
 
-- 6x - Angeled Ethernet cables - 0,5m  
+- 6x - Angled Ethernet cables - 0,5m  
 https://www.allekabels.nl/netwerk-kabel/191/1285767/uutp-kabel-cat-5e-haaks.html
 
 - 1x - USB-A to Type-M Cable (to power the switch)  
