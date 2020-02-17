@@ -88,6 +88,7 @@ https://www.allekabels.nl/usb-verlengkabel/4965/1174323/usb-20-verlengkabel.html
 ## Improvements 
 - Smaller and thinner keyboard for in the case.
 - SSD instead of the HDD.
+- Boot of SSD instead of SD
 - Use a laser cutter for perfect mounting boards. 
 - Use shorter USB-C cables, because I had 1m 3A cables.
 - Power supply might need upgrading, but the Anker should handle the current usage.  
