@@ -41,9 +41,6 @@ https://www.kiwi-electronics.nl/kw-2546?search=cooling&description=true
 - 1x - Sandisk Ultra 32GB   
 https://www.tinytronics.nl/shop/nl/raspberry-pi/sd-kaarten/sandisk-ultra-32gb-class-10-uhs-i-a1-microsd-kaart-met-sd-kaart-adapter
 
-- 1x - WD Elements Portable 1TB HDD  
-https://www.coolblue.nl/product-url/360908?utm_source=vanessa&utm_medium=mail&utm_campaign=notspecified&cbirid=A64C4D5607DF8CE7E6E34ECB831674A3
-
 - 1x SanDisk Extreme Portable SSD 500GB  
 https://www.coolblue.nl/product/806854/sandisk-extreme-portable-ssd-500gb.html?utm_source=vanessa&utm_medium=mail&utm_campaign=notspecified
 
