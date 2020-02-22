@@ -38,8 +38,8 @@ https://www.sossolutions.nl/raspberry-pi-4-model-b-4gb
 https://www.kiwi-electronics.nl/kw-2546?search=cooling&description=true
 
 ### Storage
-- 1x - Sandisk Extreme 32GB MicroSDXC  
-https://www.dataio.nl/sandisk-extreme-256gb-microsd-geheugenkaart-u3/
+- 1x - Sandisk Ultra 32GB   
+https://www.tinytronics.nl/shop/nl/raspberry-pi/sd-kaarten/sandisk-ultra-32gb-class-10-uhs-i-a1-microsd-kaart-met-sd-kaart-adapter
 
 - 1x - WD Elements Portable 1TB HDD  
 https://www.coolblue.nl/product-url/360908?utm_source=vanessa&utm_medium=mail&utm_campaign=notspecified&cbirid=A64C4D5607DF8CE7E6E34ECB831674A3
