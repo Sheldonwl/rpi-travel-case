@@ -1,10 +1,8 @@
-# rpi-travel-case-cluster
-*Under Construction*  
+# rpi-travel-case
 
-This repository contains all info needed to recreate my 6 node Raspberry Pi Kubernetes cluster travel case. Well, that's quite a mouthful.
-![Alt text](/docs/images/2.jpg?raw=true "Raspberry Pi Travel Case Cluster")
-![Alt text](/docs/images/1.jpg?raw=true "Raspberry Pi Travel Case Cluster")
+This repository contains all info needed to recreate my Raspberry Pi Travel Case. This travel case was created to demo K3s and consists of 6 Raspberry Pi 4B's, a 7" Touchscreen, 500GB SSD and Pimodori Blinkt RGB LED's.  
 
+For more info on K3s, checkout: https://k3s.io
 
 ### Shopping list
 Go to: [Shopping list](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/shopping-list.md)  
@@ -16,6 +14,14 @@ Go to: [Setup Client](https://github.com/Sheldonwl/rpi-travel-case/blob/master/d
 Go to: [Setup Server](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-server.md)  
 
 ### Use SSD instead of SD
-Go to: [SD to SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/sd-to-ssd.md)  
+Go to: [SD to SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/sd-to-ssd.md). 
+
+
+
+![Alt text](/docs/images/2.jpg?raw=true "Raspberry Pi Travel Case Cluster")
+![Alt text](/docs/images/1.jpg?raw=true "Raspberry Pi Travel Case Cluster")
+
+
+
 
  
