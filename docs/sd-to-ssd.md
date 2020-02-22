@@ -6,10 +6,13 @@ In this guide I will show you how to move your root file system from the SD card
 This guide contains 3 seperately usable guides, so I will split them up. This way it's also not a verty long read. :) 
 
 ### Prepare SSD and format to ext4
+Go to: [Prepare SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/format-sd.md)  
 
 ### Copy bootfs and rootfs from SD to SSD
+Go to: [Copy file system](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/copy-fs.md)  
 
 ### Resize SSD with data retention
+Go to: [Resize SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/sd-to-ssd.md)  
 
 
 # Sources:  
