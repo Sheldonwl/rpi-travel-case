@@ -129,7 +129,8 @@ You should get an output like this:
 If you don't get this output and still only see the top 2 lines. You can restart the Pi and try again.  
 When you do see the 4 lines, copy the PARTUUID of the last line. This is the PARTUUID of your root file system. In this example that's **bfbe04bc-02**.
 
-7. Now let's change the **/boot/cmdline.txt** file, but make a backup of it first. *If you run into any issues after changing this file and the Pi won't start up. You can remove the SD card, insert it into your laptop and replace the /boot/cmdline.txt file with the backup. Insert it back into your Pi and try booting up again.*```
+7. Now let's change the **/boot/cmdline.txt** file, but make a backup of it first. *If you run into any issues after changing this file and the Pi won't start up. You can remove the SD card, insert it into your laptop and replace the /boot/cmdline.txt file with the backup. Insert it back into your Pi and try booting up again.*
+```
 sudo cp /boot/cmdline.txt /boot/cmdline.txt.bak
 ``` 
 After backing up the file, edit the **/boot/cmdline.txt** and change the PARTUUID number. E.g.: 
