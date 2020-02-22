@@ -12,7 +12,7 @@ Go to: [Prepare SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/do
 Go to: [Copy file system](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/copy-fs.md)  
 
 ### Resize SSD with data retention
-Go to: [Resize SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/sd-to-ssd.md)  
+Go to: [Resize SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/resize-partition.md)  
 
 
 # Sources:  
