@@ -38,11 +38,14 @@ https://www.sossolutions.nl/raspberry-pi-4-model-b-4gb
 https://www.kiwi-electronics.nl/kw-2546?search=cooling&description=true
 
 ### Storage
-- 1x - Sandisk Extreme 256GB MicroSDXC  
+- 1x - Sandisk Extreme 32GB MicroSDXC  
 https://www.dataio.nl/sandisk-extreme-256gb-microsd-geheugenkaart-u3/
 
 - 1x - WD Elements Portable 1TB HDD  
 https://www.coolblue.nl/product-url/360908?utm_source=vanessa&utm_medium=mail&utm_campaign=notspecified&cbirid=A64C4D5607DF8CE7E6E34ECB831674A3
+
+- 1x SanDisk Extreme Portable SSD 500GB  
+https://www.coolblue.nl/product/806854/sandisk-extreme-portable-ssd-500gb.html?utm_source=vanessa&utm_medium=mail&utm_campaign=notspecified
 
 ### Input
 - 1x - Wireless Keyboard & Mouse  
@@ -87,8 +90,7 @@ https://www.allekabels.nl/usb-verlengkabel/4965/1174323/usb-20-verlengkabel.html
 
 ## Improvements 
 - Smaller and thinner keyboard for in the case.
-- SSD instead of the HDD.
-- Boot of SSD instead of SD
+- Remove SD after firware update containing boot from USB. 
 - Use a laser cutter for perfect mounting boards. 
 - Use shorter USB-C cables, because I had 1m 3A cables.
 - Power supply might need upgrading, but the Anker should handle the current usage.  
