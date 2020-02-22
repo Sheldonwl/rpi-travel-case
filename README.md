@@ -15,5 +15,7 @@ Go to: [Setup Client](https://github.com/Sheldonwl/rpi-travel-case/blob/master/d
 ### Setup Server 
 Go to: [Setup Server](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-server.md)  
 
+### Use SSD instead of SD
+Go to: [SD to SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/sd-to-ssd.md)  
 
  
