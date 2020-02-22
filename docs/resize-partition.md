@@ -89,15 +89,15 @@ Device     Boot Start    End Sectors  Size Id Type
 Partition type
    p   primary (1 primary, 0 extended, 3 free)
    e   extended (container for logical partitions)
---> Select (default p): p 				# Choose primary type
+--> Select (default p): p 			# Choose primary type
 --> Partition number (2-4, default 2): 	# Choose partition number 2 (sda2), which was the one with the data.
 --> First sector (2048-976773119, default 2048): 532480		# This is important! Here we need to write the start sector, which is the End sector of sda1 +1. 
---> Last sector, +/-sectors or +/-size{K,M,G,T,P} (532480-976773119, default 976773119): +300G 		# We resized to 300G, so the partition should be that size.
+--> Last sector, +/-sectors or +/-size{K,M,G,T,P} (532480-976773119, default 976773119): +300G		# We resized to 300G, so the partition should be that size.
 
 Created a new partition 2 of type 'Linux' and of size 300 GiB.
 Partition #2 contains a ext4 signature.
 
---> Do you want to remove the signature? [Y]es/[N]o: n 		# Choose NOT the remove the ext4 signature
+--> Do you want to remove the signature? [Y]es/[N]o: n		# Choose NOT the remove the ext4 signature
 
 --> Command (m for help): p 			# List partitions to check if everything is correct. 
 
@@ -117,9 +117,9 @@ Device     Boot  Start       End   Sectors  Size Id Type
 Partition type
    p   primary (2 primary, 0 extended, 2 free)
    e   extended (container for logical partitions)
---> Select (default p): p 				# Choose primary type
+--> Select (default p): p 			# Choose primary type
 --> Partition number (3,4, default 3): 		# Choose partition number 3
---> First sector (2048-976773119, default 2048): 629678080		# Important: choose the end sector of sda2 +1 as the start sector for sda3
+--> First sector (2048-976773119, default 2048): 629678080	# Important: choose the end sector of sda2 +1 as the start sector for sda3
 --> Last sector, +/-sectors or +/-size{K,M,G,T,P} (629678080-976773119, default 976773119): 	# The last sector will by default list the last sector left over. So just hit ENTER. 
 
 Created a new partition 3 of type 'Linux' and of size 165.5 GiB.
