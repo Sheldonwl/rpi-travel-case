@@ -57,4 +57,10 @@ Now let's install K3s and point it to the server. When we add the **K3S_URL** pa
 curl -sfL https://get.k3s.io | K3S_TOKEN=${NODE_TOKEN} K3S_URL="https://192.168.3.10:6443" sh -
 ```
 
+I used the following command for demo'ing purposes: 
+```
+curl -sfL https://get.k3s.io | K3S_TOKEN=${NODE_TOKEN} K3S_URL=https://192.168.3.10:6443 INSTALL_K3S_EXEC="--kubelet-arg node-status-update-frequency=5s" sh -
+```
+This adds a couple of args that give faster updates to the kube api. If you remember, we altered the node-controller to poll the nodes every 10 seconds, so we need to give faster updates from the nodes as well. 
+
 Checkout the K3s docs if you need to edit any args: https://rancher.com/docs/k3s/latest/en/installation/install-options/
