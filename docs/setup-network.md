@@ -133,3 +133,4 @@ During the installation you will be prompted to save your current iptables rules
 sudo /etc/init.d/iptables-persistent save 
 sudo /etc/init.d/iptables-persistent reload
 ```
+If you were busy setting up the server, continue at this [step](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-server.md#setup-ssh-from-host).
