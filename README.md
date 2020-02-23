@@ -13,14 +13,15 @@ Go to: [Setup Client](https://github.com/Sheldonwl/rpi-travel-case/blob/master/d
 ### Setup Server 
 Go to: [Setup Server](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-server.md)  
 
+### Setup network
+Go to: [Setup network](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-network.md). 
+
 ### Use SSD instead of SD
 Go to: [SD to SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/sd-to-ssd.md). 
 
 ### Setup K3s
 Go to: [Setup K3s](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-k3s.md). 
 
-### Improve network
-Go to: [Improve network](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/improve-network.md). 
 
 
 
