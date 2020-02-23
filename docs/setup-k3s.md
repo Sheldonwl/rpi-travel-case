@@ -37,9 +37,6 @@ Amount of time which we allow running Node to be unresponsive before marking it 
 *--node-monitor-period duration*  
 The period for syncing NodeStatus in NodeController.
 
-## Get Server token
-Copy the contents of */var/lib/rancher/k3s/server/node-token*. You will need this to set up the agent. 
-
 ## Setup K3s Agent
 To setup the agents you will need to first get the node-token. 
 ```
