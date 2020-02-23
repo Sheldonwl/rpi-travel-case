@@ -13,7 +13,7 @@ Go to: [Setup Client](https://github.com/Sheldonwl/rpi-travel-case/blob/master/d
 ### Setup Server 
 Go to: [Setup Server](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-server.md)  
 
-### Setup network
+### Setup Network
 Go to: [Setup network](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-network.md)
 
 ### Use SSD instead of SD
