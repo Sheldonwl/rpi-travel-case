@@ -207,7 +207,7 @@ tail -f /var/log/syslog
 ```
 
 # Backup SD card 
-##Mac
+## Mac
 Backup:
 ```
 diskutil list
