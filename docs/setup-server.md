@@ -26,7 +26,7 @@ Now reboot your Pi.
 sudo reboot
 ```
 
-Now let's setup the [network](https://github.com/Sheldonwl/rpi-cluster-k3s/blob/master/docs/setup-network.md). 
+Now let's setup the [network](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-network.md). 
 
 ## Setup SSH from host
 Let's copy your public key to the Raspberry Pi. To copy your public key to your Raspberry Pi, use the following command to append the public key to your authorized_keys file on the Pi, sending it over SSH:
