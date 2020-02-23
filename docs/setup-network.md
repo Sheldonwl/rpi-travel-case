@@ -56,7 +56,7 @@ iwconfig
 ```
 
 ## Disable Power Managment 
-By default the Raspberry Pi has *Power management* enabled, so you might notice your SSH sessions disconneting or your clients losing internet access. If you have used the interface file listed above, you will have also added **wireless-power off** to the wlan0 config. This will disable power management. You will need to reboot your Pi before this takes any effect. After the reboot, you can run **wiconfig** to check if it has worked. You should see an output like this: 
+By default the Raspberry Pi has *Power management* enabled, so you might notice your SSH sessions disconneting or your clients losing internet access. If you have used the interface file listed above, you will have also added **wireless-power off** to the wlan0 config. This will disable power management. You will need to reboot your Pi before this takes any effect. After the reboot, you can run **iwconfig** to check if it has worked. You should see an output like this: 
 ```
 wlan0     IEEE 802.11  ESSID:"my-home-network"
           Mode:Managed  Frequency:2.412 GHz  Access Point: 5A:39:53:F7:50:A4
