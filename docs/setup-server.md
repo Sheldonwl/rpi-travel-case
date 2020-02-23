@@ -26,27 +26,7 @@ Now reboot your Pi.
 sudo reboot
 ```
 
-## Set static IP for eth0
-Source: https://raspberrypi.stackexchange.com/questions/37920/how-do-i-set-up-networking-wifi-static-ip-address/74428#74428  
-
-Install vim package (or any other text editor)
-```
-apt-get install vim -y 
-```
-
-Add this to **/etc/dhcpcd.conf**:
-```
-interface eth0
-static ip_address=192.168.3.10/24
-static routers=192.168.3.1
-static domain_name_servers=192.168.3.1
-```
-Of course you can use any IP range you like.
-Now reboot your Pi. 
-```
-sudo reboot
-```
-You will need to enable WiFi (if you haven't already) so we can SSH into the Pi. 
+Now let's setup the [network](https://github.com/Sheldonwl/rpi-cluster-k3s/blob/master/docs/setup-network.md). 
 
 ## Setup SSH from host
 Let's copy your public key to the Raspberry Pi. To copy your public key to your Raspberry Pi, use the following command to append the public key to your authorized_keys file on the Pi, sending it over SSH:
@@ -187,8 +167,6 @@ sudo systemctl enable nfs-kernel-server
 sudo systemctl restart rpcbind
 sudo systemctl restart nfs-kernel-server
 ```
-
-Now let's setup the [network](https://github.com/Sheldonwl/rpi-cluster-k3s/blob/master/docs/setup-network.md). 
 
 # Backup SD card 
 ##Mac
