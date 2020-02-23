@@ -38,7 +38,7 @@ Amount of time which we allow running Node to be unresponsive before marking it 
 The period for syncing NodeStatus in NodeController.
 
 ## Setup K3s Agent
-To setup the agents you will need to first get the node-token. 
+To setup the agents you will need to first get the node-token from the host where you have setup the server. 
 ```
 sudo cat /var/lib/rancher/k3s/server/node-token
 
