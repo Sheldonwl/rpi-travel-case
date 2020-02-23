@@ -226,6 +226,30 @@ sudo tail -f /var/log/daemon.log
 tail -f /var/log/syslog
 ```
 
+## Setup internet access for all Pi's
+**Set ipv4_forward**
+```
+vi /etc/sysctl.conf
+net.ipv4.ip_forward=1
+sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
+```
+**Configure iptables**
+```
+sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+sudo iptables -A FORWARD -i wlan0 -o eth0 -m state --state RELATED
+sudo iptables -A FORWARD -i eth0 -o wlan0 -j ACCEPT
+sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
+```
+Save iptabbles rules by installing: 
+```
+sudo apt-get install iptables-persistent -y
+```
+During the installation you will be prompted to save your current iptables rules. Choose yes, or change it later with: 
+```
+sudo /etc/init.d/iptables-persistent save 
+sudo /etc/init.d/iptables-persistent reload
+```
+
 # Backup SD card 
 ##Mac
 Backup:
