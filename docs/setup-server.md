@@ -26,7 +26,7 @@ Now reboot your Pi.
 sudo reboot
 ```
 
-Now let's setup the [network](https://github.com/Sheldonwl/rpi-cluster-k3s/blob/master/docs/setup-network.md). 
+Now let's setup the [network](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-network.md). 
 
 ## Setup SSH from host
 Let's copy your public key to the Raspberry Pi. To copy your public key to your Raspberry Pi, use the following command to append the public key to your authorized_keys file on the Pi, sending it over SSH:
@@ -168,8 +168,46 @@ sudo systemctl restart rpcbind
 sudo systemctl restart nfs-kernel-server
 ```
 
+## Setup dnsmasq
+Let's backup the original **/etc/dnsmasq.conf**: 
+```
+sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.bak
+```
+
+Create and add the following to **/etc/dnsmasq.conf**:
+(*dhcp-host=dc:a6:32:72:39:78,192.168.3.11,1h # master-2*: I am creating static IP's for the Pi's, but those are linked to their MAC address, so you will need to remove those lines or add you own MAC addresses) 
+
+```
+no-resolv
+interface=eth0
+dhcp-authoritative
+domain=k3s.cluster
+dhcp-range=192.168.3.11,192.168.3.21,1h
+dhcp-host=dc:a6:32:72:39:78,192.168.3.11,1h # master-2
+dhcp-host=dc:a6:31:72:35:62,192.168.3.12,1h # master-3
+dhcp-host=dc:a6:34:72:39:71,192.168.3.13,1h # worker-1
+dhcp-host=dc:a6:32:72:35:52,192.168.3.14,1h # worker-2
+dhcp-host=dc:a6:32:72:39:74,192.168.3.15,1h # worker-3
+dhcp-lease-max=10
+log-dhcp
+enable-tftp
+tftp-root=/tftpboot
+pxe-service=0,"Raspberry Pi Boot"
+```
+Restart dnsmasq and anable the service. 
+```
+sudo systemctl restart dnsmasq.service
+sudo systemctl enable dnsmasq
+```
+
+You can see the dnsmasq logs by using either of these commands:
+```
+sudo tail -f /var/log/daemon.log
+tail -f /var/log/syslog
+```
+
 # Backup SD card 
-##Mac
+## Mac
 Backup:
 ```
 diskutil list
