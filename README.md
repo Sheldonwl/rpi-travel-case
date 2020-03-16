@@ -22,6 +22,8 @@ Go to: [SD to SSD](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs
 ### Setup K3s
 Go to: [Setup K3s](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/setup-k3s.md)
 
+### Hardware
+Go to: [Hardware](https://github.com/Sheldonwl/rpi-travel-case/blob/master/docs/hardware.md)
 
 
 
