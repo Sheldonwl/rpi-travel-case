@@ -3,7 +3,7 @@
 ```
 Some important notes about Rancher/K3s: 
 
-1. The Rancher management server currently does not run on ARM.
+1. The Rancher management server does not run on armv7. It will run on a 64 bit architecture. 
 2. You can import K3s clusters into an external Rancher, but the Rancher server components do not run on armv7, as that is 32 bit. The latest Raspberry Pi's actually have 64 bit hardware, but the Raspbian Buster image is 32 bit. So, as long as you put a 64 bit OS on the Pi, you can import that K3s cluster into an external Rancher management server. 
 ```
 
