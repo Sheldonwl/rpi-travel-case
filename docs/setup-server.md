@@ -147,11 +147,11 @@ sudo sed -i /UUID/d /nfs/worker-2/etc/fstab
 sudo sed -i /UUID/d /nfs/worker-3/etc/fstab
 
 # Replace the boot command in cmdline.txt (be sure to replace nfsroot IP address with the IP of the Debian machine serving as the PXE server)
-echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/master-2,vers=3 rw ip=dhcp rootwait elevator=deadline" | sudo tee /nfs/master-2/boot/cmdline.txt
-echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/master-3,vers=3 rw ip=dhcp rootwait elevator=deadline" | sudo tee /nfs/master-3/boot/cmdline.txt
-echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/worker-1,vers=3 rw ip=dhcp rootwait elevator=deadline" | sudo tee /nfs/worker-1/boot/cmdline.txt
-echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/worker-2,vers=3 rw ip=dhcp rootwait elevator=deadline" | sudo tee /nfs/worker-2/boot/cmdline.txt
-echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/worker-3,vers=3 rw ip=dhcp rootwait elevator=deadline" | sudo tee /nfs/worker-3/boot/cmdline.txt
+echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/master-2,vers=3 rw ip=dhcp rootwait elevator=deadline cgroup_memory=1 cgroup_enable=memory" | sudo tee /nfs/master-2/boot/cmdline.txt
+echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/master-3,vers=3 rw ip=dhcp rootwait elevator=deadline cgroup_memory=1 cgroup_enable=memory" | sudo tee /nfs/master-3/boot/cmdline.txt
+echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/worker-1,vers=3 rw ip=dhcp rootwait elevator=deadline cgroup_memory=1 cgroup_enable=memory" | sudo tee /nfs/worker-1/boot/cmdline.txt
+echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/worker-2,vers=3 rw ip=dhcp rootwait elevator=deadline cgroup_memory=1 cgroup_enable=memory" | sudo tee /nfs/worker-2/boot/cmdline.txt
+echo "console=serial0,115200 console=tty root=/dev/nfs nfsroot=192.168.3.10:/nfs/worker-3,vers=3 rw ip=dhcp rootwait elevator=deadline cgroup_memory=1 cgroup_enable=memory" | sudo tee /nfs/worker-3/boot/cmdline.txt
 ```
 
 The NFS share is setup by adding a line to **/etc/exports** and starting the service.
