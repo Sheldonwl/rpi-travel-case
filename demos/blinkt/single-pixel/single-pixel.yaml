@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: single-pixel
+  labels:
+    app: single-pixel
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: single-pixel
+  template:
+    metadata:
+      labels:
+        app: single-pixel
+    spec:
+      containers:
+      - name: single-pixel
+        image: sheldonwl/blinkt-single-pixel:0.0.2
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - mountPath: /home/pi/pixels
+          name: dir
+        securityContext:
+          privileged: true
+        lifecycle:
+          preStop:
+            exec:
+              command: ["/bin/sh","-c","rm \"$(stat -c \"%Y:%n\" /home/pi/pixels/* | sort -t: -n | tail -1 | cut -d: -f2-)\""]
+      imagePullSecrets:
+      - name: regcred
+      volumes:
+      - name: dir
+        hostPath:
+          path: /home/pi/pixels
+          type: DirectoryOrCreate
