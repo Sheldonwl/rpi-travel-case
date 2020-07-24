@@ -5,8 +5,8 @@ import blinkt
 import os
 
 dir = "/home/pi/pixels/"
-BRIGHTNESS = 255
-CLEAR_SLEEP = 0.1
+BRIGHTNESS = os.environ["BRIGHTNESS"]
+CLEAR_SLEEP = os.environ["CLEAR_SLEEP"]
 
 while True:
     no_pixels = 8
