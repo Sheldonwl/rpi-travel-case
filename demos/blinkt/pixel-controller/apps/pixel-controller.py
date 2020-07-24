@@ -19,7 +19,7 @@ while True:
             no_pixels -= 1
 
     blinkt.show()
-    time.sleep(int(CLEAR_SLEEP))
+    time.sleep(float(CLEAR_SLEEP))
 
     if no_pixels == 0:
         for i in range(0,8):
