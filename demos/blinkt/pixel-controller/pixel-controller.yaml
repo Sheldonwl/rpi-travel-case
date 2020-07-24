@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: pixel-controller
+  namespace: pixel-controller
   labels:
     app: pixel-controller
 spec:
@@ -18,7 +19,7 @@ spec:
         effect: NoSchedule
       containers:
       - name: pixel-controller
-        image: sheldonwl/blinkt-pixel-controller:0.0.5
+        image: sheldonwl/blinkt-pixel-controller:0.0.8
         imagePullPolicy: IfNotPresent
         env: 
         - name: CLEAR_SLEEP

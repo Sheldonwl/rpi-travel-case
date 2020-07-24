@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: clear-pixels
+spec:
+  template:
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - master-1
+                - master-2
+                - master-3
+                - worker-1
+                - worker-2
+                - worker-3
+      containers:
+      - name: blinkt-clear-pixels
+        image: sheldonwl/blinkt-clear-pixels:0.0.3
+        securityContext:
+          privileged: true
+      restartPolicy: "Never"
+  backoffLimit: 3

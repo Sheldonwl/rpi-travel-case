@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 
 import blinkt
+import os
 
-blinkt.clear()
-blinkt.set_pixel(0, 0, 0, 0)
-blinkt.set_pixel(1, 0, 0, 0)
-blinkt.set_pixel(2, 0, 0, 0)
-blinkt.set_pixel(3, 0, 0, 0)
-blinkt.set_pixel(4, 0, 0, 0)
-blinkt.set_pixel(5, 0, 0, 0)
-blinkt.set_pixel(6, 0, 0, 0)
-blinkt.set_pixel(7, 0, 0, 0)
-blinkt.show()
+dir = "/home/pi/pixels/"
+
+for i in range(0,8):
+    if os.path.isfile(dir + str(i)):
+        os.remove(dir + str(i))
+
+for i in range(0,8):
+    blinkt.set_pixel(i, 0, 0, 0)
+    blinkt.clear()
+    blinkt.show()
