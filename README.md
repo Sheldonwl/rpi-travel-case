@@ -9,6 +9,7 @@ Some important notes about Rancher/K3s:
 
 
 This repository contains all info needed to recreate my Raspberry Pi Travel Case. This travel case was created to demo K3s and consists of 6 Raspberry Pi 4B's, a 7" Touchscreen, 500GB SSD and Pimodori Blinkt RGB LED's. The setup consists of a Server and 5 clients. With PXE boot the clients netboot of the server.  
+  
 You can find a full video tutorial on how to make this here: https://youtu.be/_AeoSeVzzSM
 
 For more info on K3s, checkout: https://k3s.io  
