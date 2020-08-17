@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: pixel-controller
+  namespace: pixel-controller
+  labels:
+    app: pixel-controller
+spec:
+  selector:
+    matchLabels:
+      app: pixel-controller
+  template:
+    metadata:
+      labels:
+        app: pixel-controller
+    spec:
+      tolerations:
+      - key: node-role.kubernetes.io/master
+        effect: NoSchedule
+      containers:
+      - name: pixel-controller
+        image: sheldonwl/blinkt-pixel-controller:0.0.8
+        imagePullPolicy: IfNotPresent
+        env: 
+        - name: CLEAR_SLEEP
+          value: "0.1"
+        - name: BRIGHTNESS
+          value: "200"
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - mountPath: /home/pi/pixels
+          name: dir
+      imagePullSecrets:
+      - name: regcred
+      volumes:
+      - name: dir
+        hostPath:
+          path: /home/pi/pixels
+          type: DirectoryOrCreate

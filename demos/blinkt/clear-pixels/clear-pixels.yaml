@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: clear-pixels
+  labels:
+    app: clear-pixels
+spec:
+  selector:
+    matchLabels:
+      app: clear-pixels
+  template:
+    metadata:
+      labels:
+        app: clear-pixels
+    spec:
+      tolerations:
+      - key: node-role.kubernetes.io/master
+        effect: NoSchedule
+      containers:
+      - name: clear-pixels
+        image: sheldonwl/blinkt-clear-pixels:0.0.3
+        imagePullPolicy: IfNotPresent
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - mountPath: /home/pi/pixels
+          name: dir
+      imagePullSecrets:
+      - name: regcred
+      volumes:
+      - name: dir
+        hostPath:
+          path: /home/pi/pixels
+          type: DirectoryOrCreate
