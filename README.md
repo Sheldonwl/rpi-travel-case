@@ -1,14 +1,15 @@
 # rpi-travel-case
 
-```
-Some important notes about Rancher/K3s: 
+---
+**Some important notes about Rancher/K3s:** 
 
 1. The Rancher management server does not run on armv7. It will run on a 64 bit architecture. 
 2. You can import K3s clusters into an external Rancher, but the Rancher server components do not run on armv7, as that is 32 bit. The latest Raspberry Pi's actually have 64 bit hardware, but the Raspbian Buster image is 32 bit. So, as long as you put a 64 bit OS on the Pi, you can import that K3s cluster into an external Rancher management server. 
-```
-
+---
 
 This repository contains all info needed to recreate my Raspberry Pi Travel Case. This travel case was created to demo K3s and consists of 6 Raspberry Pi 4B's, a 7" Touchscreen, 500GB SSD and Pimodori Blinkt RGB LED's. The setup consists of a Server and 5 clients. With PXE boot the clients netboot of the server. 
+
+It's now possible to boot from a USB device, so I'll be adding in the changes for doing so and upgrading to 64 bit, a.s.a.p. :). 
 
 For more info on K3s, checkout: https://k3s.io  
 
